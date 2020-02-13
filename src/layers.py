@@ -228,6 +228,7 @@ class CapsuleCONV(nn.Module):
         #return inputs
         
         # new version (more pytorchy)
+        # will check whether it is correct whenever I have access to the resources
         # https://github.com/apple/ml-capsules-inverted-attention-routing/pull/1/files
         unfolded_input = input.unfold(2,size=self.kernel_size,step=self.stride).unfold(3,size=self.kernel_size,step=self.stride)
         unfolded_input = res.permute([0,1,5,6,2,3,4])
