@@ -222,8 +222,8 @@ class CapsuleCONV(nn.Module):
         # this may be slow if the image size is large
         # TODO: kind of stupid implementation :'(
         #inputs = torch.stack([input[:, :, self.stride * i:self.stride * i + self.kernel_size,
-                             self.stride * j:self.stride * j + self.kernel_size, :] for i in range(h_out) for j in range(w_out)],
-                            dim=-1)  # b,n, kernel_size, kernel_size, h_out*w_out*d
+        #                     self.stride * j:self.stride * j + self.kernel_size, :] for i in range(h_out) for j in range(w_out)],
+        #                    dim=-1)  # b,n, kernel_size, kernel_size, h_out*w_out*d
         #inputs = inputs.view(b,n,self.kernel_size, self.kernel_size, h_out, w_out, d)
         #return inputs
         
