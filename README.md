@@ -4,7 +4,8 @@
 
 > Pytorch implementation for Capsules with Inverted Dot-Product Attention Routing.
 
-  
+ [Update] Speed improved ~2x
+ 
  ## Paper
  [**Capsules with Inverted Dot-Product Attention Routing**](https://openreview.net/pdf?id=HJe6uANtwH)<br>
  [Yao-Hung Hubert Tsai](https://yaohungt.github.io), Nitish Srivastava, Hanlin Goh, and [Ruslan Salakhutdinov](https://www.cs.cmu.edu/~rsalakhu/)<br>
