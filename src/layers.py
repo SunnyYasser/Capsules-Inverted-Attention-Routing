@@ -212,10 +212,6 @@ class CapsuleCONV(nn.Module):
             )        
     def input_expansion(self, input):
         # input has size [batch x num_of_capsule x height x width x  x capsule_dimension]
-        
-        # old version
-        #b, n, h, w, d = input.shape 
-        
         unfolded_input = input.unfold(2,size=self.kernel_size,step=self.stride).unfold(3,size=self.kernel_size,step=self.stride)
         unfolded_input = unfolded_input.permute([0,1,5,6,2,3,4])
         # output has size [batch x num_of_capsule x kernel_size x kernel_size x h_out x w_out x capsule_dimension]
