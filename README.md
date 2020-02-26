@@ -4,7 +4,7 @@
 
 > Pytorch implementation for Capsules with Inverted Dot-Product Attention Routing.
 
- [2020/02/20 Update] Speed improved ~2x
+ [2020/02/20 Update] Speed improved ~2x. Memory usage reduced even more.
  
  ## Paper
  [**Capsules with Inverted Dot-Product Attention Routing**](https://openreview.net/pdf?id=HJe6uANtwH)<br>
